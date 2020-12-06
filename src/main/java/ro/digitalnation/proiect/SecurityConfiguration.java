@@ -12,7 +12,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    // [...] 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) 
       throws Exception {
