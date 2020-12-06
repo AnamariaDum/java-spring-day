@@ -1,16 +1,12 @@
 package ro.digitalnation.proiect;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.ui.Model;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@Service
-@RestController
+
+@Controller
 public class ClassTrack {
 	
 //	@Autowired
@@ -74,14 +70,14 @@ public class ClassTrack {
 	
 	@GetMapping("/contact")
 	public String getContact() {
-		return "contact.jsp";
+		return "contact.html";
 	}
 	
 	@PostMapping("/addContact" )
 	public String addContact(Contact a) {
 		System.out.println(a);
 		contactRepository.save(a);
-		return "contact.jsp";
+		return "contact.html";
 	}
 	
 	
