@@ -24,47 +24,47 @@ public class ClassTrack {
 		
 	@GetMapping("/abouttitlu")
 	public String getabouttitlu() {
-		return "Introduction";
+		return "About.html";
 	}
 	
 	@GetMapping("/abouttext")
 	public String getabouttext() {
-		return "Text despre about";
+		return "About.html";
 	}
 
 	@GetMapping("/projecttitlu")
 	public String getprojecttitlu() {
-		return "Introduction";
+		return "Project.html";
 	}
 	
 	@GetMapping("/projecttext")
 	public String getprojecttext() {
-		return "Text despre project";
+		return "Project.html";
 	}
 	
 	@GetMapping("/consortiumtitlu")
 	public String getconsortiumtitlu() {
-		return "Introduction despre Consortium";
+		return "Consortium.html";
 	}
 	
 	@GetMapping("/consortiumtext")
 	public String getconsortiumtext() {
-		return "Text despre Consortium";
+		return "Consortium.html";
 	}
 	
 	@GetMapping("/newstitlu")
 	public String getnewstitlu() {
-		return "News Title";
+		return "News.html";
 	}
 	
 	@GetMapping("/newstext")
 	public String getnewstext() {
-		return "News Text";
+		return "News.html";
 	}
 	
 	@GetMapping("/newsdata")
 	public String getnewsdata() {
-		return "News data";
+		return "News.html";
 	}
 	
 	

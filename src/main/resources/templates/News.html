@@ -1,24 +1,24 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Quest 2: Serving Web Content MVC</title>
+    <title>News</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <table>
     <thead>
         <tr>
-            <th> titlu </th>
-            <th> text </th>
-            <th> data </th>
+            <th> Title </th>
+            <th> Text </th>
+            <th> Data </th>
         </tr>
     </thead>
     <tbody>
-	<p>titlu</p>
+	<p>Title</p>
         <tr th:each="News : ${news}">
-            <td><span th:text="${news.newstitlu}"> titlu </span></td>
-            <td><span th:text="${news.newstext}"> text </span></td>
-            <td><span th:text="${news.newsdata}"> data </span></td>
+            <td><span th:text="${news.newstitlu}"> Title </span></td>
+            <td><span th:text="${news.newstext}"> Text </span></td>
+            <td><span th:text="${news.newsdata}"> Data </span></td>
              
         </tr>
     </tbody>

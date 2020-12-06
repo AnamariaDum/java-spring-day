@@ -1,22 +1,22 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Quest 2: Serving Web Content MVC</title>
+    <title>Consortium</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 <table>
     <thead>
         <tr>
-            <th> titlu </th>
-            <th> text </th>
+            <th> Title </th>
+            <th> Text </th>
         </tr>
     </thead>
     <tbody>
-	<p>titlu</p>
+	<p>Title</p>
         <tr th:each="Consortium : ${consortium}">
-            <td><span th:text="${consortium.consortiumtitlu}"> titlu </span></td>
-            <td><span th:text="${consortium.consortiumtext}"> text </span></td>
+            <td><span th:text="${consortium.consortiumtitlu}"> Title </span></td>
+            <td><span th:text="${consortium.consortiumtext}"> Text </span></td>
              
         </tr>
     </tbody>
