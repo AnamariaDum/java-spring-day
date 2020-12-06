@@ -13,7 +13,9 @@ public class Contact {
 	private Long id;
 	private String nume, mail, company, subject, message;
 	
-	public Contact() {}
+	public Contact() {
+		super();
+	}
 	
 	public Contact(String nume, String mail, String company, String subject, String message) {
 		super();
@@ -64,4 +66,8 @@ public class Contact {
 		this.subject = subject;
 	}
 	
+	@Override
+	public String toString() {
+		return "nume = " + nume + " mail = " + mail + "company = " + company + "subject = " + subject + "message = " + message;
+	}
 }
